@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-05T11:47:17.618062" rpa="false" schemaversion="5">
+<suite id="s1" name="Drag Drop" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/Drag_Drop.robot">
+<kw name="Inicio" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-05T11:47:17.766445" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/droppable'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-05T11:47:17.766348" elapsed="7.864335"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-08-05T11:47:25.633940" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   chromedriver                        0x0000000100ed5088 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100ecd764 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000100adc82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100ab7e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000100b45574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100b57dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000100b15474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000100b160e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100e9ca6c cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100ea14c8 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100e82950 cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100ea1c78 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100e74660 cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100ebeac0 cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100ebec3c cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100ecd398 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000191d32f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000191d2dd34 thread_start + 8
+</msg>
+<msg time="2024-08-05T11:47:25.635066" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   chromedriver                        0x0000000100ed5088 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100ecd764 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000100adc82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100ab7e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000100b45574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100b57dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000100b15474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000100b160e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100e9ca6c cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100ea14c8 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100e82950 cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100ea1c78 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100e74660 cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100ebeac0 cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100ebec3c cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100ecd398 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000191d32f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000191d2dd34 thread_start + 8
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2024-08-05T11:47:25.631898" elapsed="0.007630">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   chromedriver                        0x0000000100ed5088 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100ecd764 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000100adc82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100ab7e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000100b45574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100b57dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000100b15474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000100b160e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100e9ca6c cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100ea14c8 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100e82950 cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100ea1c78 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100e74660 cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100ebeac0 cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100ebec3c cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100ecd398 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000191d32f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000191d2dd34 thread_start + 8
+</status>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2024-08-05T11:47:25.639663" elapsed="0.000017"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-08-05T11:47:25.639729" elapsed="0.000010"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1.s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2024-08-05T11:47:25.639774" elapsed="0.000008"/>
+</kw>
+<tag>Test_uno</tag>
+<doc>Prueba Drag and Drop</doc>
+<status status="FAIL" start="2024-08-05T11:47:17.766080" elapsed="7.873800">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   chromedriver                        0x0000000100ed5088 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100ecd764 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000100adc82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100ab7e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000100b45574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100b57dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000100b15474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000100b160e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100e9ca6c cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100ea14c8 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100e82950 cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100ea1c78 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100e74660 cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100ebeac0 cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100ebec3c cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100ecd398 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000191d32f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000191d2dd34 thread_start + 8
+</status>
+</kw>
+<test id="s1-t1" name="Demo uno" line="14">
+<status status="FAIL" start="2024-08-05T11:47:25.640019" elapsed="0.000236">Parent suite setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   chromedriver                        0x0000000100ed5088 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100ecd764 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000100adc82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100ab7e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000100b45574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100b57dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000100b15474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000100b160e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100e9ca6c cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100ea14c8 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100e82950 cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100ea1c78 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100e74660 cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100ebeac0 cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100ebec3c cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100ecd398 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000191d32f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000191d2dd34 thread_start + 8
+</status>
+</test>
+<test id="s1-t2" name="Demo dos" line="19">
+<status status="FAIL" start="2024-08-05T11:47:25.644308" elapsed="0.000179">Parent suite setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   chromedriver                        0x0000000100ed5088 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100ecd764 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000100adc82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100ab7e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000100b45574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100b57dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000100b15474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000100b160e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100e9ca6c cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100ea14c8 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100e82950 cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100ea1c78 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100e74660 cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100ebeac0 cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100ebec3c cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100ecd398 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000191d32f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000191d2dd34 thread_start + 8
+</status>
+</test>
+<kw name="Salir" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-05T11:47:27.648650" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-05T11:47:25.647227" elapsed="2.001728"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-05T11:47:27.649448" elapsed="0.082331"/>
+</kw>
+<status status="PASS" start="2024-08-05T11:47:25.647074" elapsed="2.084782"/>
+</kw>
+<doc>Drag and Drop</doc>
+<status status="FAIL" start="2024-08-05T11:47:17.618865" elapsed="10.113013">Suite setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   chromedriver                        0x0000000100ed5088 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100ecd764 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000100adc82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100ab7e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000100b45574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100b57dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000100b15474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000100b160e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100e9ca6c cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100ea14c8 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100e82950 cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100ea1c78 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100e74660 cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100ebeac0 cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100ebec3c cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100ecd398 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000191d32f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000191d2dd34 thread_start + 8
+</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Drag Drop">Drag Drop</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-05T11:47:25.633940" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   chromedriver                        0x0000000100ed5088 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100ecd764 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000100adc82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100ab7e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000100b45574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100b57dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000100b15474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000100b160e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100e9ca6c cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100ea14c8 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100e82950 cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100ea1c78 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100e74660 cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100ebeac0 cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100ebec3c cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100ecd398 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000191d32f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000191d2dd34 thread_start + 8
+</msg>
+</errors>
+</robot>

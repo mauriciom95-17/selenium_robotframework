@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-26T13:26:43.375743" rpa="false" schemaversion="5">
+<suite id="s1" name="Keywords1" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/Keywords1.robot">
+<test id="s1-t1" name="Practica uno validando titulo" line="17">
+<kw name="Cargando el navegador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:43.439561" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-26T13:26:43.439472" elapsed="3.280953"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-26T13:26:46.721414" elapsed="0.353453"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-26T13:26:47.075489" elapsed="0.001317"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-26T13:26:47.076876" elapsed="0.000119"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:47.584291" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-26T13:26:47.077031" elapsed="0.507536"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:47.586522" level="INFO">Executing JavaScript:
+window.scrollTo(0,300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-26T13:26:47.584995" elapsed="0.544365"/>
+</kw>
+<tag>Test_uno</tag>
+<doc>Validando el título de la página</doc>
+<status status="PASS" start="2024-07-26T13:26:43.439228" elapsed="4.690336"/>
+</kw>
+<kw name="Validar nombre">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:49.160593" level="INFO">Element 'id=userName' is displayed.</msg>
+<arg>${name}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-26T13:26:48.130435" elapsed="1.030631"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${name}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-07-26T13:26:49.161610" elapsed="1.539115"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:50.701702" level="INFO">Typing text 'Mauricio' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>Mauricio</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T13:26:50.701179" elapsed="1.660712"/>
+</kw>
+<status status="PASS" start="2024-07-26T13:26:48.129922" elapsed="4.232372"/>
+</kw>
+<kw name="Validar email">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:53.393375" level="INFO">Element 'id=userEmail' is displayed.</msg>
+<arg>${email}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-26T13:26:52.363505" elapsed="1.030174"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${email}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-07-26T13:26:53.393986" elapsed="1.536488"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:54.930795" level="INFO">Typing text 'mauricio@example.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>mauricio@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T13:26:54.930663" elapsed="1.570846"/>
+</kw>
+<status status="PASS" start="2024-07-26T13:26:52.362887" elapsed="4.138911"/>
+</kw>
+<kw name="Validar direcciones">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:57.533541" level="INFO">Element 'id=currentAddress' is displayed.</msg>
+<arg>${dir1}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-26T13:26:56.502706" elapsed="1.031140"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${dir1}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-07-26T13:26:57.534183" elapsed="1.536297"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:26:59.070790" level="INFO">Typing text 'Peten 120' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>Peten 120</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T13:26:59.070657" elapsed="1.579214"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:27:00.650983" level="INFO">Typing text 'Wisconsin 93' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>Wisconsin 93</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T13:27:00.650445" elapsed="1.579977"/>
+</kw>
+<status status="PASS" start="2024-07-26T13:26:56.502252" elapsed="5.728573"/>
+</kw>
+<kw name="Final">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-26T13:27:02.233108" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T13:27:02.232651" elapsed="2.591938"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-26T13:27:07.827074" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-26T13:27:04.825137" elapsed="3.002204"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-26T13:27:07.827809" elapsed="0.582879"/>
+</kw>
+<status status="PASS" start="2024-07-26T13:27:02.231782" elapsed="6.179064"/>
+</kw>
+<status status="PASS" start="2024-07-26T13:26:43.439013" elapsed="24.972083"/>
+</test>
+<doc>Validando Título</doc>
+<status status="PASS" start="2024-07-26T13:26:43.376133" elapsed="25.035542"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Keywords1">Keywords1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

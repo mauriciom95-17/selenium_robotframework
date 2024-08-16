@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-05T16:55:18.395525" rpa="false" schemaversion="5">
+<suite id="s1" name="Upload file" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/Upload_file.robot">
+<test id="s1-t1" name="Demo uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-05T16:55:18.461287" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-05T16:55:18.461178" elapsed="1.511032"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-05T16:55:19.973756" elapsed="10.346360"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-05T16:55:30.325221" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-05T16:55:30.320769" elapsed="0.004536"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-05T16:55:30.325513" elapsed="0.001103"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1.s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-05T16:55:30.326777" elapsed="0.000271"/>
+</kw>
+<kw name="F_scroll" owner="Funciones">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-08-05T16:55:30.330105" level="INFO">Executing JavaScript:
+window.scroll(0, 400)
+Without any arguments.</msg>
+<arg>window.scroll(${x}, ${y})</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-08-05T16:55:30.328891" elapsed="1.011215"/>
+</kw>
+<arg>0</arg>
+<arg>400</arg>
+<status status="PASS" start="2024-08-05T16:55:30.327816" elapsed="1.012896"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-08-05T16:55:31.342114" level="INFO">Sending /Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/Files/StarWars.jpeg to browser.</msg>
+<arg>id=uploadPicture</arg>
+<arg>/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/Files/StarWars.jpeg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-08-05T16:55:31.341150" elapsed="2.071613"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-05T16:55:35.416008" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-05T16:55:33.413433" elapsed="2.002854"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-05T16:55:35.417009" elapsed="1.079173"/>
+</kw>
+<doc>Prueba Upload File</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-08-05T16:55:18.460846" elapsed="18.035815"/>
+</test>
+<doc>Upload File</doc>
+<status status="PASS" start="2024-08-05T16:55:18.395935" elapsed="18.101578"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Upload file">Upload file</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

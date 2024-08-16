@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-23T12:37:57.932991" rpa="false" schemaversion="5">
+<suite id="s1" name="Wait Until" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Case/Wait_Until.robot">
+<test id="s1-t1" name="Demo uno" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:37:58.010542" level="INFO">Opening browser 'chrome' to base url 'https://www.liverpool.com.mx/tienda/home'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T12:37:58.010438" elapsed="9.999705"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T12:38:08.012850" elapsed="0.584970"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T12:38:08.597972" elapsed="0.000573"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.8 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T12:38:08.598636" elapsed="0.000135"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:08.599161" level="INFO">Clicking element 'xpath=//span[contains(.,'Categorías')]'.</msg>
+<arg>xpath=//span[contains(.,'Categorías')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:08.598874" elapsed="1.687831"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:10.288075" level="INFO">Clicking element 'xpath=//a[contains(@as,'/tienda/electrónica/cat5150041')]'.</msg>
+<arg>xpath=//a[contains(@as,'/tienda/electrónica/cat5150041')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:10.287480" elapsed="1.702393"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:11.990467" level="INFO">Clicking element 'xpath=//a[contains(.,'Celulares y Telefonía')]'.</msg>
+<arg>xpath=//a[contains(.,'Celulares y Telefonía')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:11.990286" elapsed="1.673335"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:13.664024" level="INFO">Clicking element 'xpath=(//a[contains(.,'Celulares')])[1]'.</msg>
+<arg>xpath=(//a[contains(.,'Celulares')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:13.663882" elapsed="1.662528"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:15.327000" level="INFO">Clicking element 'xpath=(//a[contains(@id,'sortby')])[2]'.</msg>
+<arg>xpath=(//a[contains(@id,'sortby')])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:15.326782" elapsed="1.679103"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:17.006963" level="INFO">Clicking element 'xpath=(//button[@class='dropdown-item'][contains(.,'Mayor precio')])[2]'.</msg>
+<arg>xpath=(//button[@class='dropdown-item'][contains(.,'Mayor precio')])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:17.006484" elapsed="1.710719"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:18.719054" level="INFO">Executing JavaScript:
+window.scrollTo(0,200)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-23T12:38:18.718118" elapsed="0.841149"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:19.559755" level="INFO">Clicking element 'xpath=(//input[contains(@id,'variants.prices.discountPercentage-undefined')])[1]'.</msg>
+<arg>xpath=(//input[contains(@id,'variants.prices.discountPercentage-undefined')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:19.559577" elapsed="1.698237"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:21.258267" level="INFO">Clicking element 'xpath=//span[contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//span[contains(.,'Iniciar sesión')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:21.258109" elapsed="1.688667"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-23T12:38:22.947060" elapsed="2.065998"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:25.014331" level="INFO">Typing text 'salto' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>salto</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:25.013792" elapsed="2.539817"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:27.554778" level="INFO">Typing text 'mauri' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>mauri</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:27.554235" elapsed="2.487346"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:30.042113" level="INFO">Clicking element 'xpath=//button[contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//button[contains(.,'Iniciar sesión')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T12:38:30.041895" elapsed="2.001298"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Correo electrónico o contraseña incorrecta</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-07-23T12:38:32.043919" elapsed="0.820122"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-23T12:38:32.865821" level="INFO">Executing JavaScript:
+window.scrollTo(0,200)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-23T12:38:32.864744" elapsed="0.810220"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T12:38:35.676987" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T12:38:33.675716" elapsed="2.001538"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-23T12:38:35.677816" elapsed="0.880922"/>
+</kw>
+<doc>Practica 3</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-07-23T12:37:58.010125" elapsed="38.549067"/>
+</test>
+<status status="PASS" start="2024-07-23T12:37:57.933415" elapsed="38.626493"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Wait Until">Wait Until</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

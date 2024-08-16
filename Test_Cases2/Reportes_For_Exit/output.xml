@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-06T18:23:39.809401" rpa="false" schemaversion="5">
+<suite id="s1" name="For Exit" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/For_Exit.robot">
+<test id="s1-t1" name="Demo uno" line="21">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T18:23:39.888693" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T18:23:39.888572" elapsed="2.202572"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.091887" elapsed="0.351102"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-06T18:23:42.446045" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.443157" elapsed="0.002928"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.446184" elapsed="0.000393"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1.s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.446635" elapsed="0.000082"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>$items=='Robocopt'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.447008" elapsed="0.000187"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.447241" elapsed="0.000058"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-06T18:23:42.447457" level="INFO">${numbers} = 53424</msg>
+<var>${numbers}</var>
+<arg>5</arg>
+<arg>1234568765432</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.447338" elapsed="0.000129"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.447502" elapsed="0.000051"/>
+</kw>
+<var name="${items}">Bender</var>
+<status status="PASS" start="2024-08-06T18:23:42.446946" elapsed="0.000621"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>$items=='Robocopt'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.447640" elapsed="0.000070"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.447741" elapsed="0.000042"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-06T18:23:42.447880" level="INFO">${numbers} = 12713</msg>
+<var>${numbers}</var>
+<arg>5</arg>
+<arg>1234568765432</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.447816" elapsed="0.000072"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.447920" elapsed="0.000040"/>
+</kw>
+<var name="${items}">Terminator</var>
+<status status="PASS" start="2024-08-06T18:23:42.447611" elapsed="0.000363"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-08-06T18:23:42.448088" level="INFO">Exiting for loop altogether.</msg>
+<arg>$items=='Robocopt'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.448035" elapsed="0.000098"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-06T18:23:42.448165" elapsed="0.000008"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${numbers}</var>
+<arg>5</arg>
+<arg>1234568765432</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2024-08-06T18:23:42.448201" elapsed="0.000007"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-06T18:23:42.448235" elapsed="0.000006"/>
+</kw>
+<var name="${items}">Robocopt</var>
+<status status="PASS" start="2024-08-06T18:23:42.448011" elapsed="0.000245"/>
+</iter>
+<var>${items}</var>
+<value>@{ROBOTS}</value>
+<status status="PASS" start="2024-08-06T18:23:42.446785" elapsed="0.001485"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-06T18:23:43.448742" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-06T18:23:42.448320" elapsed="1.000759"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-06T18:23:43.449753" elapsed="1.078687"/>
+</kw>
+<doc>Prueba For Exit</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-08-06T18:23:39.888179" elapsed="4.640583"/>
+</test>
+<doc>For Exit</doc>
+<status status="PASS" start="2024-08-06T18:23:39.809921" elapsed="4.719348"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="For Exit">For Exit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

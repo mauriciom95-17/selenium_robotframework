@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-01T10:57:22.216773" rpa="false" schemaversion="5">
+<suite id="s1" name="Practica 1" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/Practica_1.robot">
+<test id="s1-t1" name="Practica Uno Keywords" line="13">
+<kw name="Inicio">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-01T10:57:22.313912" level="INFO">Opening browser 'chrome' to base url 'https://www.liverpool.com.mx/tienda/home'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-01T10:57:22.313815" elapsed="17.758033"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-01T10:57:40.072609" elapsed="0.703906"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-01T10:57:40.790916" level="INFO">Page title is 'Liverpool es parte de mi vida | Liverpool.com.mx'.</msg>
+<arg>Liverpool es parte de mi vida | Liverpool.com.mx</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-01T10:57:40.776658" elapsed="0.014317"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-01T10:57:40.791060" elapsed="0.000490"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-01T10:57:40.791616" elapsed="0.000098"/>
+</kw>
+<tag>Test_uno</tag>
+<doc>Practica Uno Intermedio</doc>
+<status status="PASS" start="2024-08-01T10:57:22.313544" elapsed="18.478233"/>
+</kw>
+<kw name="Bloque uno">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-01T10:57:40.792426" level="INFO">Clicking element 'xpath=//span[contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//span[contains(.,'Iniciar sesión')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T10:57:40.792105" elapsed="1.111282"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-01T10:57:41.904524" level="INFO">Typing text 'mauriciom17s95@gmail.com' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T10:57:41.903930" elapsed="2.576126"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-01T10:57:44.482358" level="INFO">Typing text 'cr7real7' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T10:57:44.480895" elapsed="1.584517"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-01T10:57:46.066475" level="INFO">Clicking button 'xpath=//button[@type='submit'][contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//button[@type='submit'][contains(.,'Iniciar sesión')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T10:57:46.065933" elapsed="3.255054"/>
+</kw>
+<arg>mauriciom17s95@gmail.com</arg>
+<arg>cr7real7</arg>
+<status status="PASS" start="2024-08-01T10:57:40.791947" elapsed="8.529424"/>
+</kw>
+<kw name="Final">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-01T10:57:51.324175" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-01T10:57:49.322707" elapsed="2.001745"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-01T10:57:51.324904" elapsed="0.583309"/>
+</kw>
+<status status="PASS" start="2024-08-01T10:57:49.322017" elapsed="2.586387"/>
+</kw>
+<status status="PASS" start="2024-08-01T10:57:22.313320" elapsed="29.595354"/>
+</test>
+<doc>Practica Uno Intermedio</doc>
+<status status="PASS" start="2024-08-01T10:57:22.217188" elapsed="29.692107"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Practica 1">Practica 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-24T11:28:58.930697" rpa="false" schemaversion="5">
+<suite id="s1" name="Practica cinco" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Case/Practica_cinco.robot">
+<test id="s1-t1" name="Demo Uno" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:28:58.994215" level="INFO">Opening browser 'chrome' to base url 'https://www.liverpool.com.mx/tienda/home'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-24T11:28:58.994113" elapsed="4.639098"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-24T11:29:03.635568" elapsed="0.573768"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:04.216303" level="INFO">Page title is 'Liverpool es parte de mi vida | Liverpool.com.mx'.</msg>
+<arg>Liverpool es parte de mi vida | Liverpool.com.mx</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-24T11:29:04.209534" elapsed="0.006822"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-24T11:29:04.216482" elapsed="0.000484"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-24T11:29:04.217032" elapsed="0.000092"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//span[contains(.,'Categorías')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-07-24T11:29:04.217172" elapsed="0.514143"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:04.733239" level="INFO">Clicking element 'xpath=//span[contains(.,'Categorías')]'.</msg>
+<arg>xpath=//span[contains(.,'Categorías')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:04.732696" elapsed="1.086345"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=(//a[contains(.,'Hombre')])[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-07-24T11:29:05.819760" elapsed="0.528556"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:06.349318" level="INFO">Clicking element 'xpath=(//a[contains(.,'Hombre')])[1]'.</msg>
+<arg>xpath=(//a[contains(.,'Hombre')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:06.348958" elapsed="1.094009"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:07.443735" level="INFO">Clicking image '//img[contains(@alt,'Tenis y sneakers | Hombre | Liverpool')]'.</msg>
+<arg>//img[contains(@alt,'Tenis y sneakers | Hombre | Liverpool')]</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:07.443454" elapsed="2.962573"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:10.406802" level="INFO">Clicking image '//img[contains(@id,'img_0')]'.</msg>
+<arg>//img[contains(@id,'img_0')]</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:10.406428" elapsed="1.594112"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:12.000971" level="INFO">Clicking element 'xpath=(//a[contains(.,'Zapatos')])[1]'.</msg>
+<arg>xpath=(//a[contains(.,'Zapatos')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:12.000745" elapsed="1.247079"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:13.248605" level="INFO">Executing JavaScript:
+window.scrollTo(0,250)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,250)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-24T11:29:13.248062" elapsed="0.523574"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:13.772551" level="INFO">Clicking image '//img[@src='https://assetspwa.liverpool.com.mx/assets/slotsimages/lp/cat5040005.jpg']'.</msg>
+<arg>//img[@src='https://assetspwa.liverpool.com.mx/assets/slotsimages/lp/cat5040005.jpg']</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:13.772207" elapsed="1.584571"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:15.357071" level="INFO">Clicking element 'xpath=(//input[contains(@id,'variants.prices.discountPercentage-undefined')])[1]'.</msg>
+<arg>xpath=(//input[contains(@id,'variants.prices.discountPercentage-undefined')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:15.356948" elapsed="1.092655"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:16.449954" level="INFO">Clicking image '//img[@alt='Bota Michel Domit de piel bovino para hombre']'.</msg>
+<arg>//img[@alt='Bota Michel Domit de piel bovino para hombre']</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:16.449806" elapsed="1.603384"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:18.053593" level="INFO">Typing text 'balones de futbol' into text field 'id=mainSearchbar'.</msg>
+<arg>id=mainSearchbar</arg>
+<arg>balones de futbol</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:18.053430" elapsed="1.890698"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:19.944590" level="INFO">Clicking element 'xpath=(//i[contains(@class,'icon-zoom')])[1]'.</msg>
+<arg>xpath=(//i[contains(@class,'icon-zoom')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:19.944437" elapsed="1.073577"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:21.018372" level="INFO">Clicking image '//img[@alt='Balón Nike Pitch - Fa23 para fútbol']'.</msg>
+<arg>//img[@alt='Balón Nike Pitch - Fa23 para fútbol']</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:21.018225" elapsed="2.047576"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:23.066191" level="INFO">Typing text 'balones de futbol' into text field 'id=mainSearchbar'.</msg>
+<arg>id=mainSearchbar</arg>
+<arg>balones de futbol</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:23.066008" elapsed="1.797951"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:24.864397" level="INFO">Clicking element 'xpath=(//i[contains(@class,'icon-zoom')])[1]'.</msg>
+<arg>xpath=(//i[contains(@class,'icon-zoom')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:24.864236" elapsed="1.082425"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:25.947569" level="INFO">Clicking element '(//input[contains(@id,'variants.prices.discountPercentage-undefined')])[1]'.</msg>
+<arg>(//input[contains(@id,'variants.prices.discountPercentage-undefined')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:25.947183" elapsed="1.619394"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:27.567748" level="INFO">Clicking element 'xpath=//span[contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//span[contains(.,'Iniciar sesión')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:27.567240" elapsed="1.105249"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:28.675898" level="INFO">Typing text 'hola' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>hola</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:28.674011" elapsed="1.861092"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:30.536413" level="INFO">Typing text 'cr7Real7' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>cr7Real7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:30.535872" elapsed="1.581855"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:32.118960" level="INFO">Clicking button 'xpath=//button[@type='submit'][contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//button[@type='submit'][contains(.,'Iniciar sesión')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:32.118444" elapsed="3.053793"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Correo electrónico o contraseña incorrecta</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-07-24T11:29:35.172839" elapsed="0.522877"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:35.696855" level="INFO">Typing text 'saltoalberto2@gmail.com' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>saltoalberto2@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:35.696337" elapsed="1.584103"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:37.281647" level="INFO">Typing text 'cr7Real7' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>cr7Real7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:37.281092" elapsed="1.575138"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-24T11:29:38.857125" level="INFO">Clicking button 'xpath=//button[@type='submit'][contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//button[@type='submit'][contains(.,'Iniciar sesión')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-24T11:29:38.856668" elapsed="4.491872"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-24T11:29:47.351133" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-24T11:29:43.349265" elapsed="4.002249"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-24T11:29:49.353184" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-24T11:29:47.352265" elapsed="2.001199"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-24T11:29:49.354040" elapsed="0.576808"/>
+</kw>
+<doc>Demo practica Cinco funciones click</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-07-24T11:28:58.993803" elapsed="50.937397"/>
+</test>
+<doc>Practica Cinco funciones click</doc>
+<status status="PASS" start="2024-07-24T11:28:58.931092" elapsed="51.000677"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Practica cinco">Practica cinco</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

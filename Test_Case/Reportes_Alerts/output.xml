@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-23T13:22:23.049068" rpa="false" schemaversion="5">
+<suite id="s1" name="Alerts" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Case/Alerts.robot">
+<test id="s1-t1" name="Demo Uno" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:23.127914" level="INFO">Opening browser 'chrome' to base url 'https://testpages.herokuapp.com/styled/alerts/alert-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-23T13:22:23.127809" elapsed="3.264650"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-23T13:22:26.393274" elapsed="0.337277"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:26.735145" level="INFO">Page title is 'Test Page For JavaScript Alerts'.</msg>
+<arg>Test Page For JavaScript Alerts</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-23T13:22:26.730806" elapsed="0.004370"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-23T13:22:26.735260" elapsed="0.000409"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-23T13:22:26.735733" elapsed="0.000092"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:26.736110" level="INFO">Clicking button 'id=alertexamples'.</msg>
+<arg>id=alertexamples</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T13:22:26.735885" elapsed="1.616780"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:28.353569" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-07-23T13:22:28.353244" elapsed="1.517714"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:29.873094" level="INFO">Executing JavaScript:
+window.scrollTo(0,300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-23T13:22:29.871852" elapsed="0.516874"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:30.389752" level="INFO">Clicking button 'id=confirmexample'.</msg>
+<arg>id=confirmexample</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T13:22:30.389279" elapsed="1.590275"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:31.981091" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-07-23T13:22:31.980620" elapsed="1.519623"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:33.501421" level="INFO">Clicking button 'id=confirmexample'.</msg>
+<arg>id=confirmexample</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T13:22:33.500926" elapsed="1.549124"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:35.051023" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-07-23T13:22:35.050668" elapsed="1.520141"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T13:22:38.573955" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T13:22:36.571561" elapsed="2.002658"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:38.575272" level="INFO">Clicking button 'id=alertexamples'.</msg>
+<arg>id=alertexamples</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-23T13:22:38.574787" elapsed="1.554940"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2024-07-23T13:22:40.130274" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>I am an alert box!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-07-23T13:22:40.130098" elapsed="1.521856"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-23T13:22:43.655143" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-23T13:22:41.652633" elapsed="2.002790"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-23T13:22:43.655997" elapsed="0.580594"/>
+</kw>
+<doc>Prueba de Alerts</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-07-23T13:22:23.127494" elapsed="21.109458"/>
+</test>
+<doc>Demo de Alerts</doc>
+<status status="PASS" start="2024-07-23T13:22:23.049454" elapsed="21.188026"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Alerts">Alerts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

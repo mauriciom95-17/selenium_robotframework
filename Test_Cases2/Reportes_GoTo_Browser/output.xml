@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-26T11:49:49.306941" rpa="false" schemaversion="5">
+<suite id="s1" name="GoTo Browser" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/GoTo_Browser.robot">
+<test id="s1-t1" name="Demo Uno" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-26T11:49:49.378941" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-26T11:49:49.378836" elapsed="7.615363"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-26T11:49:56.995418" elapsed="0.357419"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-26T11:49:57.356059" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-26T11:49:57.353265" elapsed="0.002848"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-26T11:49:57.356231" elapsed="0.000454"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-26T11:49:57.356756" elapsed="0.000098"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-26T11:50:00.358145" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-26T11:49:57.356917" elapsed="3.001428"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-26T11:50:00.359229" level="INFO">Opening url 'https://www.liverpool.com.mx/tienda/'</msg>
+<arg>https://www.liverpool.com.mx/tienda/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-26T11:50:00.358957" elapsed="0.979595"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2024-07-26T11:50:01.339040" elapsed="4.348850"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-26T11:50:07.689920" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-26T11:50:05.688969" elapsed="2.001177"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-26T11:50:07.690639" elapsed="0.589903"/>
+</kw>
+<doc>Switch en navegador</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-07-26T11:49:49.378507" elapsed="18.902316"/>
+</test>
+<doc>Switch en Navegadore</doc>
+<status status="PASS" start="2024-07-26T11:49:49.307563" elapsed="18.973788"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="GoTo Browser">GoTo Browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

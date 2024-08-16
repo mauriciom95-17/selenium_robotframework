@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-14T17:20:58.273295" rpa="false" schemaversion="5">
+<suite id="s1" name="Prueba1" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases4/Prueba1.robot">
+<test id="s1-t1" name="Demo uno" line="12">
+<kw name="Inicio">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:20:58.349646" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-14T17:20:58.349560" elapsed="5.288466"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-14T17:21:03.639310" elapsed="0.915609"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:04.559507" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.555050" elapsed="0.004539"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.559722" elapsed="0.001301"/>
+</kw>
+<kw name="F_texto" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.562105" elapsed="0.019274"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.581483" elapsed="0.008542"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:04.596075" level="INFO">Element '//input[@id='userName']' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.590126" elapsed="0.006095"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.596373" elapsed="0.028023"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:04.624791" level="INFO">Typing text 'Mauricio' into text field '//input[@id='userName']'.</msg>
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.624505" elapsed="0.077026"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:04.757317" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Test_Cases3/Reportes_Practica_excel_python/IMG/Mauricio.png"&gt;&lt;img src="../../Test_Cases3/Reportes_Practica_excel_python/IMG/Mauricio.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${sel}</arg>
+<arg>${ruta_fotos_pagina}${dato}.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.701691" elapsed="0.055769"/>
+</kw>
+<arg>//input[@id='userName']</arg>
+<arg>Mauricio</arg>
+<status status="PASS" start="2024-08-14T17:21:04.561466" elapsed="0.196199"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-08-14T17:20:58.349310" elapsed="6.408456"/>
+</iter>
+<iter>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:04.758350" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-14T17:21:04.758140" elapsed="15.139346"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-14T17:21:19.900800" elapsed="0.458471"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:20.363677" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.359500" elapsed="0.004229"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.363816" elapsed="0.001800"/>
+</kw>
+<kw name="F_texto" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.366888" elapsed="0.020295"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.387284" elapsed="0.012384"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:20.412944" level="INFO">Element '//input[@id='userName']' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.399836" elapsed="0.013164"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.413094" elapsed="0.021942"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:20.435374" level="INFO">Typing text 'Mauricio' into text field '//input[@id='userName']'.</msg>
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.435164" elapsed="0.138902"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:20.675183" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Test_Cases3/Reportes_Practica_excel_python/IMG/Mauricio.png"&gt;&lt;img src="../../Test_Cases3/Reportes_Practica_excel_python/IMG/Mauricio.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${sel}</arg>
+<arg>${ruta_fotos_pagina}${dato}.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.574168" elapsed="0.101072"/>
+</kw>
+<arg>//input[@id='userName']</arg>
+<arg>Mauricio</arg>
+<status status="PASS" start="2024-08-14T17:21:20.366087" elapsed="0.309212"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-08-14T17:21:04.757955" elapsed="15.917374"/>
+</iter>
+<iter>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:20.675641" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-14T17:21:20.675521" elapsed="1.800467"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-14T17:21:22.477823" elapsed="9.292538"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:31.794291" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-14T17:21:31.783703" elapsed="0.010647"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-14T17:21:31.794482" elapsed="0.003974"/>
+</kw>
+<kw name="F_texto" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-14T17:21:31.800592" elapsed="0.020959"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-14T17:21:31.821687" elapsed="0.012493"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:31.843606" level="INFO">Element '//input[@id='userName']' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-14T17:21:31.834306" elapsed="0.009467"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T17:21:31.843866" elapsed="0.024435"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:31.868568" level="INFO">Typing text 'Mauricio' into text field '//input[@id='userName']'.</msg>
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T17:21:31.868408" elapsed="0.131421"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-14T17:21:32.141278" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Test_Cases3/Reportes_Practica_excel_python/IMG/Mauricio.png"&gt;&lt;img src="../../Test_Cases3/Reportes_Practica_excel_python/IMG/Mauricio.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${sel}</arg>
+<arg>${ruta_fotos_pagina}${dato}.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-08-14T17:21:31.999949" elapsed="0.141396"/>
+</kw>
+<arg>//input[@id='userName']</arg>
+<arg>Mauricio</arg>
+<status status="PASS" start="2024-08-14T17:21:31.799798" elapsed="0.341629"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-08-14T17:21:20.675434" elapsed="11.466019"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>4</value>
+<status status="PASS" start="2024-08-14T17:20:58.349240" elapsed="33.792258"/>
+</for>
+<tag>test_uno</tag>
+<doc>Prueba Paralelo</doc>
+<status status="PASS" start="2024-08-14T17:20:58.349154" elapsed="33.792410"/>
+</kw>
+<kw name="Final">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-14T17:21:34.143827" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-14T17:21:32.142224" elapsed="2.002198"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-14T17:21:34.146013" elapsed="0.316433"/>
+</kw>
+<status status="PASS" start="2024-08-14T17:21:32.142001" elapsed="2.320552"/>
+</kw>
+<status status="PASS" start="2024-08-14T17:20:58.348940" elapsed="36.113789"/>
+</test>
+<doc>Prueba uno</doc>
+<status status="PASS" start="2024-08-14T17:20:58.274522" elapsed="36.188757"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Prueba1">Prueba1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

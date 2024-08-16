@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-17T17:24:49.329977" rpa="false" schemaversion="5">
+<suite id="s1" name="Validar titulo" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Case/Validar_titulo.robot">
+<test id="s1-t1" name="Practica uno validando titulo" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-17T17:24:49.405352" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>https://demoqa.com/text-box</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-17T17:24:49.405263" elapsed="3.004149"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-17T17:24:52.409793" elapsed="0.541577"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-17T17:24:52.954926" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-17T17:24:52.951974" elapsed="0.003014"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-17T17:24:53.957059" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-17T17:24:52.955337" elapsed="1.001857"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-17T17:24:53.957816" level="INFO">Typing text 'Mauricio' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>Mauricio</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-17T17:24:53.957372" elapsed="0.103935"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-17T17:24:55.061612" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-17T17:24:54.061429" elapsed="1.000296"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-17T17:24:55.063540" level="INFO">Typing text 'mauricio@example.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>mauricio@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-17T17:24:55.063338" elapsed="0.038488"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-17T17:24:56.102659" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-17T17:24:55.102004" elapsed="1.000925"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-17T17:24:56.103888" level="INFO">Typing text 'Peten 120' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>Peten 120</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-17T17:24:56.103443" elapsed="0.064631"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-17T17:24:57.169392" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-17T17:24:56.168309" elapsed="1.001330"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-17T17:24:57.170106" level="INFO">Typing text 'Wisconsin 93' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>Wisconsin 93</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-17T17:24:57.169926" elapsed="0.028803"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-17T17:24:58.201565" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-17T17:24:57.198859" elapsed="1.003014"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-17T17:24:58.206492" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-17T17:24:58.206092" elapsed="0.039976"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-17T17:24:59.247652" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-17T17:24:58.246223" elapsed="1.001663"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-17T17:24:59.249628" level="INFO">Executing JavaScript:
+window.scrollTo(0,200)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-17T17:24:59.248410" elapsed="0.009079"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-17T17:25:00.258620" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-17T17:24:59.258100" elapsed="1.000754"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-17T17:25:00.259582" elapsed="0.092078"/>
+</kw>
+<doc>Validando el título de la página</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-07-17T17:24:49.404922" elapsed="10.946901"/>
+</test>
+<doc>Validando Título</doc>
+<status status="PASS" start="2024-07-17T17:24:49.330384" elapsed="11.021691"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Validar titulo">Validar titulo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

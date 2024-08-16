@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-16T17:43:58.141293" rpa="false" schemaversion="5">
+<suite id="s1" name="Test uno" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Case/Test_uno.robot">
+<test id="s1-t1" name="Mi primer test" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:43:58.204350" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>https://demoqa.com/text-box</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-16T17:43:58.204269" elapsed="8.800717"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-16T17:44:07.006816" elapsed="0.454612"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:09.463250" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:07.461770" elapsed="2.001770"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:09.465465" level="INFO">Typing text 'Mauricio' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>Mauricio</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:09.464048" elapsed="0.111348"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:09.575663" level="INFO">Typing text 'mauricio@example.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>mauricio@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:09.575540" elapsed="0.031880"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:09.607670" level="INFO">Typing text 'Calle 123, 456,' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>Calle 123, 456,</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:09.607560" elapsed="0.026657"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:09.634549" level="INFO">Typing text 'Calle 789, 122,' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>Calle 789, 122,</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:09.634420" elapsed="0.025364"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:11.660768" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:09.659902" elapsed="2.001143"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:11.662030" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:11.661633" elapsed="0.043665"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:13.707700" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:11.705452" elapsed="2.002499"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:13.709689" level="INFO">Executing JavaScript:
+window.scrollTo(0,200)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-16T17:44:13.708482" elapsed="0.014416"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:15.725939" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:13.723613" elapsed="2.002576"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-16T17:44:15.726904" elapsed="0.099247"/>
+</kw>
+<status status="PASS" start="2024-07-16T17:43:58.203985" elapsed="17.622349"/>
+</test>
+<test id="s1-t2" name="Mi segundo test" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:15.826813" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>https://demoqa.com/text-box</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-16T17:44:15.826701" elapsed="5.604556"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-16T17:44:21.431697" elapsed="0.592831"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:24.025153" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:22.024653" elapsed="2.000980"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:24.026810" level="INFO">Typing text 'Mauricio' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>Mauricio</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:24.026450" elapsed="0.078129"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:26.106878" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:24.104700" elapsed="2.002320"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:26.107561" level="INFO">Typing text 'mauricio@example.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>mauricio@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:26.107305" elapsed="0.051331"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:28.160624" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:26.158789" elapsed="2.002190"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:28.161809" level="INFO">Typing text 'Calle 123, 456,' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>Calle 123, 456,</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:28.161440" elapsed="0.052592"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:30.215676" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:28.214179" elapsed="2.001730"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:30.217946" level="INFO">Typing text 'Calle 789, 122,' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>Calle 789, 122,</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:44:30.216411" elapsed="0.046989"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:44:32.264662" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:44:30.263550" elapsed="2.001342"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:44:32.265967" level="INFO">Clicking button 'id=submit'.</msg>
+<msg time="2024-07-16T17:44:33.610968" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-16T17:44:33.611776" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="submit" type="button" class="btn btn-primary"&gt;...&lt;/button&gt; is not clickable at point (1041, 691). Other element would receive the click: &lt;iframe frameborder="0" src="https://a00b7ba4fd9334c167eabea8111fcf92.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-300x250_1" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="1005" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="7" style="border: 0px; vertical-align: bottom; max-height: 30vh !important; overflow: hidden !important; display: block; margin: 0px auto;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x0000000105312a0c chromedriver + 4385292
+1   chromedriver                        0x000000010530b318 chromedriver + 4354840
+2   chromedriver                        0x0000000104f28b0c chromedriver + 281356
+3   chromedriver                        0x0000000104f70ce0 chromedriver + 576736
+4   chromedriver                        0x0000000104f6f284 chromedriver + 569988
+5   chromedriver                        0x0000000104f6d414 chromedriver + 562196
+6   chromedriver                        0x0000000104f6c5b0 chromedriver + 558512
+7   chromedriver                        0x0000000104f61cfc chromedriver + 515324
+8   chromedriver                        0x0000000104f61734 chromedriver + 513844
+9   chromedriver                        0x0000000104fa3d24 chromedriver + 785700
+10  chromedriver                        0x0000000104f5feec chromedriver + 507628
+11  chromedriver                        0x0000000104f608c4 chromedriver + 510148
+12  chromedriver                        0x00000001052da3c8 chromedriver + 4154312
+13  chromedriver                        0x00000001052dee2c chromedriver + 4173356
+14  chromedriver                        0x00000001052bff84 chromedriver + 4046724
+15  chromedriver                        0x00000001052df718 chromedriver + 4175640
+16  chromedriver                        0x00000001052b2f44 chromedriver + 3993412
+17  chromedriver                        0x00000001052fd1a8 chromedriver + 4297128
+18  chromedriver                        0x00000001052fd324 chromedriver + 4297508
+19  chromedriver                        0x000000010530af10 chromedriver + 4353808
+20  libsystem_pthread.dylib             0x0000000197aaaf94 _pthread_start + 136
+21  libsystem_pthread.dylib             0x0000000197aa5d34 thread_start + 8
+</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-16T17:44:32.265415" elapsed="1.352129">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="submit" type="button" class="btn btn-primary"&gt;...&lt;/button&gt; is not clickable at point (1041, 691). Other element would receive the click: &lt;iframe frameborder="0" src="https://a00b7ba4fd9334c167eabea8111fcf92.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-300x250_1" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="1005" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="7" style="border: 0px; vertical-align: bottom; max-height: 30vh !important; overflow: hidden !important; display: block; margin: 0px auto;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x0000000105312a0c chromedriver + 4385292
+1   chromedriver                        0x000000010530b318 chromedriver + 4354840
+2   chromedriver                        0x0000000104f28b0c chromedriver + 2...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000104f608c4 chromedriver + 510148
+12  chromedriver                        0x00000001052da3c8 chromedriver + 4154312
+13  chromedriver                        0x00000001052dee2c chromedriver + 4173356
+14  chromedriver                        0x00000001052bff84 chromedriver + 4046724
+15  chromedriver                        0x00000001052df718 chromedriver + 4175640
+16  chromedriver                        0x00000001052b2f44 chromedriver + 3993412
+17  chromedriver                        0x00000001052fd1a8 chromedriver + 4297128
+18  chromedriver                        0x00000001052fd324 chromedriver + 4297508
+19  chromedriver                        0x000000010530af10 chromedriver + 4353808
+20  libsystem_pthread.dylib             0x0000000197aaaf94 _pthread_start + 136
+21  libsystem_pthread.dylib             0x0000000197aa5d34 thread_start + 8</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-07-16T17:44:33.617763" elapsed="0.000014"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-07-16T17:44:33.617835" elapsed="0.000009"/>
+</kw>
+<status status="FAIL" start="2024-07-16T17:44:15.826513" elapsed="17.791461">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="submit" type="button" class="btn btn-primary"&gt;...&lt;/button&gt; is not clickable at point (1041, 691). Other element would receive the click: &lt;iframe frameborder="0" src="https://a00b7ba4fd9334c167eabea8111fcf92.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-300x250_1" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="1005" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="7" style="border: 0px; vertical-align: bottom; max-height: 30vh !important; overflow: hidden !important; display: block; margin: 0px auto;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x0000000105312a0c chromedriver + 4385292
+1   chromedriver                        0x000000010530b318 chromedriver + 4354840
+2   chromedriver                        0x0000000104f28b0c chromedriver + 2...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000104f608c4 chromedriver + 510148
+12  chromedriver                        0x00000001052da3c8 chromedriver + 4154312
+13  chromedriver                        0x00000001052dee2c chromedriver + 4173356
+14  chromedriver                        0x00000001052bff84 chromedriver + 4046724
+15  chromedriver                        0x00000001052df718 chromedriver + 4175640
+16  chromedriver                        0x00000001052b2f44 chromedriver + 3993412
+17  chromedriver                        0x00000001052fd1a8 chromedriver + 4297128
+18  chromedriver                        0x00000001052fd324 chromedriver + 4297508
+19  chromedriver                        0x000000010530af10 chromedriver + 4353808
+20  libsystem_pthread.dylib             0x0000000197aaaf94 _pthread_start + 136
+21  libsystem_pthread.dylib             0x0000000197aa5d34 thread_start + 8</status>
+</test>
+<status status="FAIL" start="2024-07-16T17:43:58.141756" elapsed="35.477219"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Test uno">Test uno</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

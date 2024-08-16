@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-17T13:55:29.183281" rpa="false" schemaversion="5">
+<suite id="s1" name="Variables uno" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Case/Variables_uno.robot">
+<test id="s1-t1" name="Demo uno" line="15">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-17T13:55:29.249573" level="INFO">Mi nombre es = Mauricio</msg>
+<arg>Mi nombre es ${nombre}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.249497" elapsed="0.000097"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-17T13:55:29.249910" level="INFO">${direccion} = wisconsin 93</msg>
+<var>${direccion}</var>
+<arg>wisconsin 93</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.249861" elapsed="0.000058"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${direccion}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.249965" elapsed="0.000045"/>
+</kw>
+<doc>Prueba de nuestas primeras variables</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-07-17T13:55:29.249190" elapsed="0.000861"/>
+</test>
+<test id="s1-t2" name="Demo dos" line="22">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-17T13:55:29.250253" level="INFO">Mi nombre es = Mauricio = Moreno</msg>
+<arg>Mi nombre es ${nombre} ${ap}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.250207" elapsed="0.000058"/>
+</kw>
+<doc>Prueba dos de nuestas primeras variables</doc>
+<tag>Test_dos</tag>
+<status status="PASS" start="2024-07-17T13:55:29.250117" elapsed="0.000184"/>
+</test>
+<test id="s1-t3" name="Demo tres" line="27">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-17T13:55:29.250487" level="INFO">Mi nombre es = Mauricio = Moreno = Salto = 28</msg>
+<arg>Mi nombre es ${nombre} ${ap} ${am} ${ed}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.250436" elapsed="0.000062"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-17T13:55:29.250570" level="INFO">${a} = 20</msg>
+<var>${a}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.250534" elapsed="0.000043"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-17T13:55:29.250641" level="INFO">${b} = 30</msg>
+<var>${b}</var>
+<arg>30</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.250611" elapsed="0.000036"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-17T13:55:29.250743" level="INFO">${suma} = 50</msg>
+<var>${suma}</var>
+<arg>${a} + ${b}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.250680" elapsed="0.000070"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-17T13:55:29.250838" level="INFO">${multi} = 600</msg>
+<var>${multi}</var>
+<arg>${a} * ${b}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.250785" elapsed="0.000060"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${suma}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.250878" elapsed="0.000038"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${multi}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-17T13:55:29.250948" elapsed="0.000036"/>
+</kw>
+<doc>Prueba tres de nuestas primeras variables</doc>
+<tag>Test_tres</tag>
+<status status="PASS" start="2024-07-17T13:55:29.250356" elapsed="0.000661"/>
+</test>
+<doc>Demo de las variables</doc>
+<status status="PASS" start="2024-07-17T13:55:29.183841" elapsed="0.067288"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_dos</stat>
+<stat pass="1" fail="0" skip="0">Test_tres</stat>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Variables uno">Variables uno</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

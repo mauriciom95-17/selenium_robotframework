@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-12T11:57:18.989464" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotcorder3" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases3/Robotcorder3.robot">
+<test id="s1-t1" name="DEMOQA test" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-12T11:57:19.080068" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>https://demoqa.com/text-box</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-12T11:57:19.079942" elapsed="4.095760"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-12T11:57:23.177115" elapsed="0.439574"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-12T11:57:24.119492" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-12T11:57:23.616956" elapsed="0.502599"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-12T11:57:24.120088" level="INFO">Typing text 'Erika' into text field '//input[@id="userName"]'.</msg>
+<arg>//input[@id="userName"]</arg>
+<arg>Erika</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-12T11:57:24.119693" elapsed="0.093310"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-12T11:57:24.714120" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-12T11:57:24.213142" elapsed="0.501039"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-12T11:57:24.714424" level="INFO">Typing text 'erika@gmail.com' into text field '//input[@id="userEmail"]'.</msg>
+<arg>//input[@id="userEmail"]</arg>
+<arg>erika@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-12T11:57:24.714309" elapsed="0.034122"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-12T11:57:25.249547" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-12T11:57:24.748576" elapsed="0.501123"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-12T11:57:25.250162" level="INFO">Typing text 'Dirección 1' into text field '//textarea[@id="currentAddress"]'.</msg>
+<arg>//textarea[@id="currentAddress"]</arg>
+<arg>Dirección 1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-12T11:57:25.249988" elapsed="0.033806"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-12T11:57:25.784947" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-12T11:57:25.283948" elapsed="0.501083"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-12T11:57:25.785373" level="INFO">Typing text 'Dirección 2' into text field '//textarea[@id="permanentAddress"]'.</msg>
+<arg>//textarea[@id="permanentAddress"]</arg>
+<arg>Dirección 2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-12T11:57:25.785208" elapsed="0.025694"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-12T11:57:26.311927" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-12T11:57:25.811255" elapsed="0.500735"/>
+</kw>
+<kw name="F_scroll" owner="Funciones">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-08-12T11:57:26.313787" level="INFO">Executing JavaScript:
+window.scroll(0, 300)
+Without any arguments.</msg>
+<arg>window.scroll(${x}, ${y})</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-08-12T11:57:26.313430" elapsed="0.002440"/>
+</kw>
+<arg>0</arg>
+<arg>300</arg>
+<status status="PASS" start="2024-08-12T11:57:26.312318" elapsed="0.003613"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-12T11:57:26.316107" level="INFO">Clicking element '//button[@id='submit']'.</msg>
+<arg>//button[@id='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-12T11:57:26.316019" elapsed="0.021309"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-12T11:57:26.837635" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-12T11:57:26.337465" elapsed="0.500234"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-12T11:57:26.837829" elapsed="0.083635"/>
+</kw>
+<status status="PASS" start="2024-08-12T11:57:19.079637" elapsed="7.841954"/>
+</test>
+<doc>A test suite with a single test for DEMOQA
+Created by hats' Robotcorder</doc>
+<status status="PASS" start="2024-08-12T11:57:18.990039" elapsed="7.931806"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robotcorder3">Robotcorder3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

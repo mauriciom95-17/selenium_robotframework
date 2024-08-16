@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-14T11:40:13.750835" rpa="false" schemaversion="5">
+<suite id="s1" name="Database" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases3/Database.robot">
+<kw name="Connect To Database" owner="DatabaseLibrary" type="SETUP">
+<msg time="2024-08-14T11:40:13.861853" level="INFO">Connecting using : pymysql.connect(db=sistema_uno, user=mauricio, passwd=***, host=localhost, port=3306, charset=None)</msg>
+<arg>pymysql</arg>
+<arg>${dbname}</arg>
+<arg>${dbuser}</arg>
+<arg>${dbpass}</arg>
+<arg>${dbhost}</arg>
+<arg>${dbport}</arg>
+<doc>Loads the DB API 2.0 module given ``dbapiModuleName`` then uses it to
+connect to the database using provided parameters such as ``dbName``, ``dbUsername``, and ``dbPassword``.</doc>
+<status status="PASS" start="2024-08-14T11:40:13.833248" elapsed="0.060693"/>
+</kw>
+<test id="s1-t1" name="Base Traer Todos los Campos" line="75">
+<kw name="Query" owner="DatabaseLibrary">
+<msg time="2024-08-14T11:40:13.894803" level="INFO">Executing : Query  |  select * from personas2 </msg>
+<msg time="2024-08-14T11:40:13.910996" level="INFO">@{todos} = [ (1, 'Mauricio', 'Moreno') | (2, 'Carlos', 'Tapia') | (3, 'Arturo', 'Gonzalez') | (4, 'Ericka', 'Pichardo') | (5, 'Miguel', 'Ruiz') ]</msg>
+<var>@{todos}</var>
+<arg>select * from personas2</arg>
+<doc>Runs a query with the ``selectStatement`` and returns the result as a list of rows.
+The type of row values depends on the database module -
+usually they are tuples or tuple-like objects.</doc>
+<status status="PASS" start="2024-08-14T11:40:13.894726" elapsed="0.016287"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>many @{todos}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-14T11:40:13.911130" elapsed="0.000194"/>
+</kw>
+<doc>Consulta todos los Registros</doc>
+<tag>test_todos</tag>
+<status status="PASS" start="2024-08-14T11:40:13.894445" elapsed="0.016937"/>
+</test>
+<kw name="Disconnect From Database" owner="DatabaseLibrary" type="TEARDOWN">
+<msg time="2024-08-14T11:40:13.911624" level="INFO">Executing : Disconnect From Database</msg>
+<doc>Disconnects from the database.</doc>
+<status status="PASS" start="2024-08-14T11:40:13.911591" elapsed="0.000075"/>
+</kw>
+<doc>Practica Base de Datos Mysql</doc>
+<status status="PASS" start="2024-08-14T11:40:13.751734" elapsed="0.159949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test_todos</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Database">Database</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

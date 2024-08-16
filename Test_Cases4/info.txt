@@ -1,0 +1,5 @@
+Paralelo
+
+pabot --procesos 2  [caso]
+
+comando resultados.- pabot --procesos 6 --outputdir Resultados

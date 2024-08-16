@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-06T17:29:54.703145" rpa="false" schemaversion="5">
+<suite id="s1" name="For Arreglo" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/For_Arreglo.robot">
+<test id="s1-t1" name="Demo uno" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:29:54.770541" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:29:54.770447" elapsed="2.939094"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:29:57.710340" elapsed="0.342924"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:29:58.055517" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-06T17:29:58.053430" elapsed="0.002129"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-06T17:29:58.055715" elapsed="0.001037"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1.s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-06T17:29:58.056841" elapsed="0.000121"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:29:58.057442" elapsed="0.000105"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:29:58.057809" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:29:58.057647" elapsed="2.399804"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:30:00.457763" elapsed="1.902938"/>
+</kw>
+<var name="${items}">1</var>
+<status status="PASS" start="2024-08-06T17:29:58.057369" elapsed="4.303619"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:30:02.361688" elapsed="0.000405"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:30:02.362810" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:30:02.362370" elapsed="2.102369"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:30:04.465205" elapsed="1.872104"/>
+</kw>
+<var name="${items}">2</var>
+<status status="PASS" start="2024-08-06T17:30:02.361466" elapsed="3.975926"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:30:06.337800" elapsed="0.000250"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:30:06.338390" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:30:06.338192" elapsed="2.253363"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:30:08.592424" elapsed="4.970034"/>
+</kw>
+<var name="${items}">3</var>
+<status status="PASS" start="2024-08-06T17:30:06.337689" elapsed="7.225191"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:30:13.564259" elapsed="0.000676"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:30:13.567371" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:30:13.566434" elapsed="8.416844"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:30:21.990389" elapsed="1.349833"/>
+</kw>
+<var name="${items}">4</var>
+<status status="PASS" start="2024-08-06T17:30:13.563857" elapsed="9.776794"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:30:23.342293" elapsed="0.000674"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:30:23.343935" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:30:23.343250" elapsed="5.122550"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:30:28.467395" elapsed="1.342414"/>
+</kw>
+<var name="${items}">5</var>
+<status status="PASS" start="2024-08-06T17:30:23.341970" elapsed="6.468001"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:30:29.810703" elapsed="0.000430"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:30:29.811846" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:30:29.811389" elapsed="7.796414"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:30:37.609071" elapsed="1.337791"/>
+</kw>
+<var name="${items}">6</var>
+<status status="PASS" start="2024-08-06T17:30:29.810482" elapsed="9.136621"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:30:38.948099" elapsed="0.000582"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:30:38.949538" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:30:38.948947" elapsed="3.541594"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:30:42.491197" elapsed="11.000061"/>
+</kw>
+<var name="${items}">7</var>
+<status status="PASS" start="2024-08-06T17:30:38.947792" elapsed="14.544134"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:30:53.496161" elapsed="0.000884"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:30:53.497692" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:30:53.497217" elapsed="21.297039"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:31:14.797423" elapsed="1.346573"/>
+</kw>
+<var name="${items}">8</var>
+<status status="PASS" start="2024-08-06T17:30:53.495715" elapsed="22.648523"/>
+</iter>
+<var>${items}</var>
+<value>@{num}</value>
+<status status="PASS" start="2024-08-06T17:29:58.057129" elapsed="78.087358"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-06T17:31:17.148233" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-06T17:31:16.145546" elapsed="1.002840"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-06T17:31:17.148940" elapsed="9.624251"/>
+</kw>
+<doc>Prueba For por Arreglo</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-08-06T17:29:54.770137" elapsed="92.004093"/>
+</test>
+<doc>For por Arreglo</doc>
+<status status="PASS" start="2024-08-06T17:29:54.703573" elapsed="92.073680"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="For Arreglo">For Arreglo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

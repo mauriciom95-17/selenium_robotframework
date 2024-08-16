@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-22T17:26:00.010611" rpa="false" schemaversion="5">
+<suite id="s1" name="Practica3" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Case/Practica3.robot">
+<test id="s1-t1" name="Demo uno" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:00.080561" level="INFO">Opening browser 'chrome' to base url 'https://www.liverpool.com.mx/tienda/home'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-22T17:26:00.080458" elapsed="4.448710"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-22T17:26:04.529690" elapsed="0.587370"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-22T17:26:05.117262" elapsed="0.001804"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-22T17:26:05.119480" elapsed="0.000304"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:07.145648" level="INFO">Element 'xpath=//span[contains(.,'Categorías')]' is displayed.</msg>
+<arg>xpath=//span[contains(.,'Categorías')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-22T17:26:05.119886" elapsed="2.026047"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:07.146905" level="INFO">Clicking element 'xpath=//span[contains(.,'Categorías')]'.</msg>
+<arg>xpath=//span[contains(.,'Categorías')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T17:26:07.146473" elapsed="2.078428"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:11.268180" level="INFO">Element 'xpath=//a[contains(@as,'/tienda/electrónica/cat5150041')]' is displayed.</msg>
+<arg>xpath=//a[contains(@as,'/tienda/electrónica/cat5150041')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-22T17:26:09.225675" elapsed="2.042772"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:11.269938" level="INFO">Clicking element 'xpath=//a[contains(@as,'/tienda/electrónica/cat5150041')]'.</msg>
+<arg>xpath=//a[contains(@as,'/tienda/electrónica/cat5150041')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T17:26:11.269140" elapsed="2.074293"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:13.343793" level="INFO">Clicking element 'xpath=//a[contains(.,'Celulares y Telefonía')]'.</msg>
+<arg>xpath=//a[contains(.,'Celulares y Telefonía')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T17:26:13.343677" elapsed="2.097403"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:15.442186" level="INFO">Clicking element 'xpath=(//a[contains(.,'Celulares')])[1]'.</msg>
+<arg>xpath=(//a[contains(.,'Celulares')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T17:26:15.441745" elapsed="2.079544"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:17.521760" level="INFO">Clicking element 'xpath=(//a[contains(@id,'sortby')])[2]'.</msg>
+<arg>xpath=(//a[contains(@id,'sortby')])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T17:26:17.521530" elapsed="2.100324"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:19.623035" level="INFO">Clicking element 'xpath=(//button[@class='dropdown-item'][contains(.,'Mayor precio')])[2]'.</msg>
+<arg>xpath=(//button[@class='dropdown-item'][contains(.,'Mayor precio')])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T17:26:19.622508" elapsed="2.116765"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:21.739714" level="INFO">Clicking element 'xpath=(//input[contains(@id,'variants.prices.discountPercentage-undefined')])[1]'.</msg>
+<arg>xpath=(//input[contains(@id,'variants.prices.discountPercentage-undefined')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T17:26:21.739563" elapsed="2.105590"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-22T17:26:23.847349" level="INFO">Executing JavaScript:
+window.scrollTo(0,200)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-22T17:26:23.846245" elapsed="1.040683"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-22T17:26:26.889185" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-22T17:26:24.887613" elapsed="2.001836"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-22T17:26:26.890017" elapsed="1.079259"/>
+</kw>
+<doc>Demo Selectores</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-07-22T17:26:00.080147" elapsed="27.889858"/>
+</test>
+<status status="PASS" start="2024-07-22T17:26:00.011023" elapsed="27.959661"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Practica3">Practica3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

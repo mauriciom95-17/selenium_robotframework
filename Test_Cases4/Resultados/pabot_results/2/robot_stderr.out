@@ -1,0 +1,23 @@
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.101)
+Stacktrace:
+0   chromedriver                        0x0000000102f45024 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000102f3d700 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000102b4c82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000102b27e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x0000000102bb5574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000102bc7dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x0000000102b85474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x0000000102b860e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000102f0ca08 cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000102f11464 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000102ef28ec cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000102f11c14 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000102ee45fc cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000102f2ea5c cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000102f2ebd8 cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000102f3d334 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000186332f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000018632dd34 thread_start + 8
+

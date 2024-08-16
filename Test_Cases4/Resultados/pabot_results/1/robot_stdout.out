@@ -1,0 +1,54 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Prueba2 :: Prueba uno                                                  
+==============================================================================
+Demo uno                                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases4/Prueba2.robot:12
+    T:  Demo uno    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases4/Prueba2.robot:13
+      Inicio    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases4/Prueba2.robot:24
+      ${i}    IN RANGE    1    4    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases4/Prueba2.robot:24
+      ${i} = 3    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases4/Prueba2.robot:27
+      Title Should Be    DEMOQA
+______________________________________________________________________________
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.101)
+Stacktrace:
+0   chromedriver                        0x0000000100d85024 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x0000000100d7d700 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x000000010098c82c cxxbridge1$string$len + 88524
+3   chromedriver                        0x0000000100967e50 core::str::slice_error_fail::he7b2aa4898bc357e + 3908
+4   chromedriver                        0x00000001009f5574 cxxbridge1$string$len + 517908
+5   chromedriver                        0x0000000100a07dd8 cxxbridge1$string$len + 593784
+6   chromedriver                        0x00000001009c5474 cxxbridge1$string$len + 321044
+7   chromedriver                        0x00000001009c60e4 cxxbridge1$string$len + 324228
+8   chromedriver                        0x0000000100d4ca08 cxxbridge1$str$ptr + 1656336
+9   chromedriver                        0x0000000100d51464 cxxbridge1$str$ptr + 1675372
+10  chromedriver                        0x0000000100d328ec cxxbridge1$str$ptr + 1549556
+11  chromedriver                        0x0000000100d51c14 cxxbridge1$str$ptr + 1677340
+12  chromedriver                        0x0000000100d245fc cxxbridge1$str$ptr + 1491460
+13  chromedriver                        0x0000000100d6ea5c cxxbridge1$str$ptr + 1795684
+14  chromedriver                        0x0000000100d6ebd8 cxxbridge1$str$ptr + 1796064
+15  chromedriver                        0x0000000100d7d334 cxxbridge1$str$ptr + 1855292
+16  libsystem_pthread.dylib             0x0000000186332f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000018632dd34 thread_start + 8
+------------------------------------------------------------------------------
+Suites.Prueba2 :: Prueba uno                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases4/Resultados/pabot_results/1/output.xml

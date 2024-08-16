@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-06T17:35:47.966834" rpa="false" schemaversion="5">
+<suite id="s1" name="For Continue" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/For_Continue.robot">
+<test id="s1-t1" name="Demo uno" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:35:48.014126" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T17:35:48.014029" elapsed="1.759989"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T17:35:49.774494" elapsed="0.331306"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-06T17:35:50.108473" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.106060" elapsed="0.002462"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.108649" elapsed="0.000671"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1.s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.109385" elapsed="0.000082"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>$items=='Terminator'</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.109717" elapsed="0.000151"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.109910" elapsed="0.000057"/>
+</kw>
+<var name="${items}">Bender</var>
+<status status="PASS" start="2024-08-06T17:35:50.109663" elapsed="0.000321"/>
+</iter>
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<msg time="2024-08-06T17:35:50.110128" level="INFO">Continuing for loop from the next iteration.</msg>
+<arg>$items=='Terminator'</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.110055" elapsed="0.000118"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-06T17:35:50.110206" elapsed="0.000009"/>
+</kw>
+<var name="${items}">Terminator</var>
+<status status="PASS" start="2024-08-06T17:35:50.110027" elapsed="0.000202"/>
+</iter>
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>$items=='Terminator'</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.110287" elapsed="0.000058"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.110374" elapsed="0.000046"/>
+</kw>
+<var name="${items}">Robocopt</var>
+<status status="PASS" start="2024-08-06T17:35:50.110264" elapsed="0.000171"/>
+</iter>
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>$items=='Terminator'</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.110488" elapsed="0.000052"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.110570" elapsed="0.000045"/>
+</kw>
+<var name="${items}">RoborFrameworks</var>
+<status status="PASS" start="2024-08-06T17:35:50.110464" elapsed="0.000164"/>
+</iter>
+<var>${items}</var>
+<value>@{ROBOTS}</value>
+<status status="PASS" start="2024-08-06T17:35:50.109527" elapsed="0.001114"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-06T17:35:51.113316" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-06T17:35:50.110691" elapsed="1.002945"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-06T17:35:51.114417" elapsed="1.081704"/>
+</kw>
+<doc>Prueba For por Arreglo</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-08-06T17:35:48.013708" elapsed="4.182725"/>
+</test>
+<doc>For por Arreglo</doc>
+<status status="PASS" start="2024-08-06T17:35:47.967556" elapsed="4.229444"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="For Continue">For Continue</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

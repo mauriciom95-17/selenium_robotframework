@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-09T11:45:41.486197" rpa="false" schemaversion="5">
+<suite id="s1" name="Base3" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases3/Base3.robot">
+<test id="s1-t1" name="Demo uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-09T11:45:41.567273" level="INFO">Opening browser 'chrome' to base url 'https://www.liverpool.com.mx/tienda/home?gad_source=1&amp;gclid=CjwKCAjw_Na1BhAlEiwAM-dm7KG1-ERpp-Ic0gGvX_4lryviE6Ff15h9NdVdvUWt9Dap6fIoOtb-pRoCUsMQAvD_BwE&amp;gclsrc=aw.ds'.</msg>
+<arg>https://www.liverpool.com.mx/tienda/home?gad_source=1&amp;gclid=CjwKCAjw_Na1BhAlEiwAM-dm7KG1-ERpp-Ic0gGvX_4lryviE6Ff15h9NdVdvUWt9Dap6fIoOtb-pRoCUsMQAvD_BwE&amp;gclsrc=aw.ds</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-09T11:45:41.567117" elapsed="4.221076"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-09T11:45:45.793083" elapsed="0.761243"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-09T11:45:46.554485" elapsed="0.000652"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-09T11:45:46.555221" elapsed="0.000139"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-09T11:45:46.555750" level="INFO">Clicking element '//span[@class="a-header__strongLink nav-desktop-menu-action pr-3 pb-3"]'.</msg>
+<arg>//span[@class="a-header__strongLink nav-desktop-menu-action pr-3 pb-3"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-09T11:45:46.555448" elapsed="2.052616"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-09T11:45:48.608577" level="INFO">Clicking element '//a[@href="/tienda/hombre/cat5020003"]'.</msg>
+<arg>//a[@href="/tienda/hombre/cat5020003"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-09T11:45:48.608392" elapsed="2.061010"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-09T11:45:50.669668" level="INFO">Clicking element '//img[contains(@alt,'Tenis y sneakers | Hombre | Liverpool')]'.</msg>
+<arg>//img[contains(@alt,'Tenis y sneakers | Hombre | Liverpool')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-09T11:45:50.669557" elapsed="3.064893"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-09T11:45:53.734920" level="INFO">Clicking element '(//img[@alt='Tenis Tommy Hilfiger de piel para hombre'])[1]'.</msg>
+<arg>(//img[@alt='Tenis Tommy Hilfiger de piel para hombre'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-09T11:45:53.734700" elapsed="2.064939"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-09T11:45:55.800006" level="INFO">Typing text 'balones de futbol' into text field '//input[@id="mainSearchbar"]'.</msg>
+<arg>//input[@id="mainSearchbar"]</arg>
+<arg>balones de futbol</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-09T11:45:55.799879" elapsed="3.233016"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-09T11:45:59.033179" level="INFO">Clicking element '(//i[contains(@class,'icon-zoom')])[1]'.</msg>
+<arg>(//i[contains(@class,'icon-zoom')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-09T11:45:59.033072" elapsed="2.062811"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-09T11:46:01.098601" level="INFO">Clicking element '//input[@id="variants.prices.discountPercentage-undefined"]'.</msg>
+<arg>//input[@id="variants.prices.discountPercentage-undefined"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-09T11:46:01.097837" elapsed="2.392124"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-09T11:46:05.491238" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-09T11:46:03.490260" elapsed="2.001041"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-09T11:46:05.491436" elapsed="1.085757"/>
+</kw>
+<status status="PASS" start="2024-08-09T11:45:41.566813" elapsed="25.010904"/>
+</test>
+<doc>Base 3 robotcorder</doc>
+<status status="PASS" start="2024-08-09T11:45:41.487100" elapsed="25.091288"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Base3">Base3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

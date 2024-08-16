@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-01T18:08:57.806582" rpa="false" schemaversion="5">
+<suite id="s1" name="Click1" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/Click1.robot">
+<test id="s1-t1" name="Demo uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-01T18:08:57.882406" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/buttons'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-01T18:08:57.882307" elapsed="4.156161"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-01T18:09:02.038858" elapsed="0.445593"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-01T18:09:02.487796" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-01T18:09:02.484664" elapsed="0.003173"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-01T18:09:02.487951" elapsed="0.000523"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-01T18:09:02.488560" elapsed="0.000108"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-01T18:09:02.489208" level="INFO">Double clicking element 'doubleClickBtn'.</msg>
+<arg>doubleClickBtn</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T18:09:02.488744" elapsed="0.891051"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>rightClickBtn</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T18:09:03.380494" elapsed="1.001057"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-08-01T18:09:04.383428" level="INFO">Executing JavaScript:
+window.scrollTo(0,200)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-08-01T18:09:04.382319" elapsed="0.313190"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-01T18:09:06.698030" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-01T18:09:04.696282" elapsed="2.002029"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-01T18:09:06.699002" elapsed="0.378131"/>
+</kw>
+<doc>Opciones de click</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-08-01T18:08:57.881993" elapsed="9.195450"/>
+</test>
+<doc>Opciones de click</doc>
+<status status="PASS" start="2024-08-01T18:08:57.807176" elapsed="9.270786"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Click1">Click1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

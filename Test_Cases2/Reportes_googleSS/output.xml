@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-01T20:26:10.890368" rpa="false" schemaversion="5">
+<suite id="s1" name="Google Screenshot" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/google_screenshot.robot">
+<test id="s1-t1" name="Demo uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:10.965677" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-01T20:26:10.965573" elapsed="1.827564"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:12.798404" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-01T20:26:12.793983" elapsed="0.004462"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-01T20:26:12.798548" elapsed="0.342916"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-01T20:26:13.141654" elapsed="0.000721"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-01T20:26:13.142458" elapsed="0.000105"/>
+</kw>
+<kw name="F_texto" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T20:26:13.143184" elapsed="1.030026"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-01T20:26:14.173745" elapsed="1.545660"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:16.744158" level="INFO">Element 'xpath=//textarea[@title='Buscar']' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T20:26:15.719957" elapsed="1.024477"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:16.745474" level="INFO">Typing text 'Clima en cdmx' into text field 'xpath=//textarea[@title='Buscar']'.</msg>
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T20:26:16.744850" elapsed="1.645237"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:19.491594" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Reportes_Click/IMG/Clima%20en%20cdmx.png"&gt;&lt;img src="../Reportes_Click/IMG/Clima%20en%20cdmx.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${sel}</arg>
+<arg>${ruta_fotos_pagina}${dato}.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-08-01T20:26:18.390477" elapsed="1.101371"/>
+</kw>
+<arg>xpath=//textarea[@title='Buscar']</arg>
+<arg>Clima en cdmx</arg>
+<status status="PASS" start="2024-08-01T20:26:13.142739" elapsed="6.349404"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Escribiendo el campo ciudad</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-01T20:26:19.492605" elapsed="0.000305"/>
+</kw>
+<kw name="F_enter" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T20:26:19.493624" elapsed="1.024755"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-01T20:26:20.518899" elapsed="1.541193"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:23.077483" level="INFO">Element 'xpath=//textarea[@title='Buscar']' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T20:26:22.060410" elapsed="1.017339"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:23.079403" level="INFO">Sending key(s) ('ENTER',) to xpath=//textarea[@title='Buscar'] element.</msg>
+<msg time="2024-08-01T20:26:24.375387" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-08-01T20:26:24.375593" level="INFO">Releasing special key ENTER.</msg>
+<arg>${sel}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-08-01T20:26:23.078192" elapsed="2.823622"/>
+</kw>
+<arg>xpath=//textarea[@title='Buscar']</arg>
+<status status="PASS" start="2024-08-01T20:26:19.493217" elapsed="6.408900"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Dando enter</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-01T20:26:25.902495" elapsed="0.000285"/>
+</kw>
+<kw name="F_foto_pagina" owner="Funciones">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:26.531828" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Reportes_Click/IMG/clima3.png"&gt;&lt;img src="../Reportes_Click/IMG/clima3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${ruta_fotos_pagina}${nombre_imagen}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-01T20:26:25.903415" elapsed="0.628631"/>
+</kw>
+<arg>clima3.png</arg>
+<status status="PASS" start="2024-08-01T20:26:25.903054" elapsed="0.629230"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Sacando primera pantalla</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-01T20:26:26.532654" elapsed="0.000276"/>
+</kw>
+<kw name="F_foto_selector" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T20:26:26.533553" elapsed="1.032710"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-01T20:26:27.566777" elapsed="1.533142"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:30.123275" level="INFO">Element 'xpath=//div[contains(@id,'wc')]' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T20:26:29.100420" elapsed="1.023123"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-01T20:26:31.228662" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Reportes_Click/IMG/clima4.png"&gt;&lt;img src="../Reportes_Click/IMG/clima4.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${sel}</arg>
+<arg>${ruta_fotos_pagina}${nombre_imagen}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-08-01T20:26:30.123984" elapsed="1.104936"/>
+</kw>
+<arg>xpath=//div[contains(@id,'wc')]</arg>
+<arg>clima4.png</arg>
+<status status="PASS" start="2024-08-01T20:26:26.533179" elapsed="4.695994"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Pantalla selector</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-01T20:26:31.229570" elapsed="0.000265"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-01T20:26:33.232118" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-01T20:26:31.230147" elapsed="2.002268"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-01T20:26:33.233022" elapsed="0.575025"/>
+</kw>
+<doc>Demo Selectores</doc>
+<tag>Test_uno</tag>
+<status status="PASS" start="2024-08-01T20:26:10.965238" elapsed="22.843077"/>
+</test>
+<doc>Switch en navegadores</doc>
+<status status="PASS" start="2024-08-01T20:26:10.891044" elapsed="22.917667"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_uno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Google Screenshot">Google Screenshot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

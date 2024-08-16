@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-01T11:25:45.179348" rpa="false" schemaversion="5">
+<suite id="s1" name="Practica 3" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases2/Practica_3.robot">
+<test id="s1-t1" name="Practica Uno Keywords" line="14">
+<kw name="Inicio" owner="Keywords_practica1_2">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-01T11:25:45.257012" level="INFO">Opening browser 'chrome' to base url 'https://www.liverpool.com.mx/tienda/home'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-01T11:25:45.256924" elapsed="3.509470"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-01T11:25:48.767372" elapsed="0.688341"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-01T11:25:49.458089" level="INFO">Page title is 'Liverpool es parte de mi vida | Liverpool.com.mx'.</msg>
+<arg>Liverpool es parte de mi vida | Liverpool.com.mx</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-01T11:25:49.455825" elapsed="0.002307"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-01T11:25:49.458206" elapsed="0.000402"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-01T11:25:49.458660" elapsed="0.000080"/>
+</kw>
+<tag>Test_uno</tag>
+<doc>Practica Uno Intermedio</doc>
+<status status="PASS" start="2024-08-01T11:25:45.256651" elapsed="4.202139"/>
+</kw>
+<kw name="Bloque uno" owner="Keywords_practica1_2">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-01T11:25:49.459287" level="INFO">Clicking element 'xpath=//span[contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//span[contains(.,'Iniciar sesión')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T11:25:49.459086" elapsed="1.085854"/>
+</kw>
+<kw name="F_texto" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T11:25:50.545342" elapsed="1.350837"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-01T11:25:51.896710" elapsed="1.543325"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-01T11:25:54.467622" level="INFO">Element 'id=username' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T11:25:53.440545" elapsed="1.027366"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-01T11:25:54.468950" level="INFO">Typing text 'mauriciom17s95@gmail.com' into text field 'id=username'.</msg>
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T11:25:54.468348" elapsed="1.629441"/>
+</kw>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2024-08-01T11:25:50.545129" elapsed="5.552807"/>
+</kw>
+<kw name="F_texto" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T11:25:56.098380" elapsed="1.018017"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-01T11:25:57.116610" elapsed="1.528208"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-01T11:25:59.667257" level="INFO">Element 'id=password' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-01T11:25:58.645188" elapsed="1.022532"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-01T11:25:59.668834" level="INFO">Typing text 'cr7real7' into text field 'id=password'.</msg>
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T11:25:59.668214" elapsed="1.577790"/>
+</kw>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-08-01T11:25:56.098104" elapsed="5.148245"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-01T11:26:01.247509" level="INFO">Clicking button 'xpath=//button[@type='submit'][contains(.,'Iniciar sesión')]'.</msg>
+<arg>xpath=//button[@type='submit'][contains(.,'Iniciar sesión')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-01T11:26:01.246718" elapsed="3.067226"/>
+</kw>
+<arg>mauriciom17s95@gmail.com</arg>
+<arg>cr7real7</arg>
+<status status="PASS" start="2024-08-01T11:25:49.458942" elapsed="14.855341"/>
+</kw>
+<kw name="Final" owner="Keywords_practica1_2">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-01T11:26:06.318208" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-01T11:26:04.315619" elapsed="2.002643"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-01T11:26:06.318349" elapsed="0.579857"/>
+</kw>
+<status status="PASS" start="2024-08-01T11:26:04.314916" elapsed="2.583435"/>
+</kw>
+<status status="PASS" start="2024-08-01T11:25:45.256464" elapsed="21.642120"/>
+</test>
+<doc>Practica Uno Intermedio</doc>
+<status status="PASS" start="2024-08-01T11:25:45.180029" elapsed="21.719074"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Practica 3">Practica 3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-12T16:23:13.807141" rpa="false" schemaversion="5">
+<suite id="s1" name="Keywords python2" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases3/Keywords_python2.robot">
+<test id="s1-t1" name="Demo uno" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-12T16:23:13.885225" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-12T16:23:13.885130" elapsed="8.970308"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-12T16:23:22.857224" elapsed="0.454325"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-12T16:23:23.318500" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-12T16:23:23.312569" elapsed="0.005992"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-12T16:23:23.318760" elapsed="0.001945"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-08-12T16:23:23.321178" elapsed="0.000374"/>
+</kw>
+<kw name="Concatenar_Nombre desde Python">
+<kw name="Concatenar Nombre" owner="Keywords_Python">
+<msg time="2024-08-12T16:23:23.325669" level="INFO">${resultado} = Bienvenidos al curso de RobotFramework: Mauricio Alberto Moreno Salto</msg>
+<var>${resultado}</var>
+<arg>${name}</arg>
+<arg>${ap}</arg>
+<arg>${am}</arg>
+<status status="PASS" start="2024-08-12T16:23:23.325527" elapsed="0.000158"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-12T16:23:23.325911" level="INFO">Bienvenidos al curso de RobotFramework: Mauricio Alberto Moreno Salto</msg>
+<arg>${resultado}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-12T16:23:23.325760" elapsed="0.000215"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${resultado}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-12T16:23:23.326155" elapsed="0.000285"/>
+</kw>
+<arg>Mauricio Alberto</arg>
+<arg>Moreno</arg>
+<arg>Salto</arg>
+<doc>Bienvenido concatenada</doc>
+<status status="PASS" start="2024-08-12T16:23:23.324827" elapsed="0.001715"/>
+</kw>
+<kw name="Validar_Nombre con Python">
+<kw name="Validar Nombre" owner="Keywords_Python">
+<msg time="2024-08-12T16:23:23.328421" level="INFO">${r} = No te conozco quien eres?</msg>
+<var>${r}</var>
+<arg>${name}</arg>
+<status status="PASS" start="2024-08-12T16:23:23.328032" elapsed="0.000423"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-12T16:23:23.328791" level="INFO">No te conozco quien eres?</msg>
+<arg>${r}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-12T16:23:23.328614" elapsed="0.000236"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${r}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-12T16:23:23.328993" elapsed="0.000284"/>
+</kw>
+<arg>Carlos</arg>
+<doc>Validando el nombre de Mauricio</doc>
+<status status="PASS" start="2024-08-12T16:23:23.326691" elapsed="0.002678"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-12T16:23:25.332299" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-12T16:23:23.329550" elapsed="2.003115"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-12T16:23:25.332951" elapsed="0.168076"/>
+</kw>
+<status status="PASS" start="2024-08-12T16:23:13.884838" elapsed="11.616410"/>
+</test>
+<doc>Base 3 robotcorder</doc>
+<status status="PASS" start="2024-08-12T16:23:13.807568" elapsed="11.694050"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Keywords python2">Keywords python2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

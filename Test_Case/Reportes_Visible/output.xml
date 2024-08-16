@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-18T16:25:57.972978" rpa="false" schemaversion="5">
+<suite id="s1" name="Validar Visible" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Case/Validar_Visible.robot">
+<test id="s1-t1" name="Practica tres Validando por Negación" line="76">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:25:58.052463" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-18T16:25:58.052350" elapsed="4.815162"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-18T16:26:02.868900" elapsed="0.475424"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:26:03.380271" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.344885" elapsed="0.035614"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T16:26:03.483497" level="INFO">Slept 100 milliseconds.</msg>
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.380875" elapsed="0.102695"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-18T16:26:03.483867" level="INFO">${name} = id=userName</msg>
+<var>${name}</var>
+<arg>id=userName</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.483738" elapsed="0.000139"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-18T16:26:03.483981" level="INFO">${email} = id=userEmail</msg>
+<var>${email}</var>
+<arg>id=userEmail</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.483932" elapsed="0.000057"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-18T16:26:03.484077" level="INFO">${dir1} = id=currentAddress</msg>
+<var>${dir1}</var>
+<arg>id=currentAddress</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.484038" elapsed="0.000047"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${name}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.484140" elapsed="0.115511"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:26:03.599893" level="INFO">Typing text 'Mauricio' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>Mauricio</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.599776" elapsed="0.119015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T16:26:03.819552" level="INFO">Slept 100 milliseconds.</msg>
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.718919" elapsed="0.100746"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:26:03.828118" level="INFO">Element 'id=userEmail' is displayed.</msg>
+<arg>${email}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.819893" elapsed="0.008265"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${email}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.828255" elapsed="0.006008"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:26:03.834408" level="INFO">Typing text 'mauricio@example.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>mauricio@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.834340" elapsed="0.025650"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T16:26:03.960405" level="INFO">Slept 100 milliseconds.</msg>
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.860120" elapsed="0.100359"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:26:03.960767" level="INFO">Typing text 'Peten 120' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>Peten 120</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.960632" elapsed="0.030081"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T16:26:04.091684" level="INFO">Slept 100 milliseconds.</msg>
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T16:26:03.990964" elapsed="0.100785"/>
+</kw>
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:26:04.099297" level="INFO">Element 'id=currentAddress' attribute 'placeholder' contains value 'Current Address'.</msg>
+<arg>${dir1}</arg>
+<arg>placeholder</arg>
+<arg>Current Address</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="PASS" start="2024-07-18T16:26:04.091885" elapsed="0.007958"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:26:04.100406" level="INFO">Typing text 'Wisconsin 93' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>Wisconsin 93</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T16:26:04.100029" elapsed="0.031706"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T16:26:04.232403" level="INFO">Slept 100 milliseconds.</msg>
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T16:26:04.131856" elapsed="0.100651"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-18T16:26:04.232834" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T16:26:04.232702" elapsed="0.025571"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T16:26:04.359806" level="INFO">Slept 100 milliseconds.</msg>
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T16:26:04.258510" elapsed="0.101595"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-18T16:26:04.461979" level="INFO">Slept 100 milliseconds.</msg>
+<arg>${t}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-18T16:26:04.360474" elapsed="0.101563"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-18T16:26:04.462158" elapsed="0.078236"/>
+</kw>
+<doc>Validando por Negación</doc>
+<tag>Test_tres</tag>
+<status status="PASS" start="2024-07-18T16:25:58.051945" elapsed="6.488585"/>
+</test>
+<doc>Validando Título</doc>
+<status status="PASS" start="2024-07-18T16:25:57.973835" elapsed="6.566924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_tres</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Validar Visible">Validar Visible</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
