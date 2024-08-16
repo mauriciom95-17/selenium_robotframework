@@ -1,0 +1,32 @@
+1723693590358	geckodriver	INFO	Listening on 127.0.0.1:50211
+1723693590538	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fx/19tt3bv17lg36z7bb9p0vm9h0000gn/T/rust_mozprofileLpfYYV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1723693594435	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1723693594648	Marionette	INFO	Listening on port 50233
+WebDriver BiDi listening on ws://127.0.0.1:50212
+Read port: 50233
+1723693594707	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:50212/devtools/browser/e5dda633-1eae-49b2-a55b-1527518e845e
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yfHRfIYbZCll3drT8gfkqU4JLjCcK3Jw7L6xolIZ-qI.js line 2 > eval line 2627 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yfHRfIYbZCll3drT8gfkqU4JLjCcK3Jw7L6xolIZ-qI.js line 2 > eval line 3282 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yfHRfIYbZCll3drT8gfkqU4JLjCcK3Jw7L6xolIZ-qI.js line 2 > eval line 4394 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 427: TypeError: c(...).setup is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yfHRfIYbZCll3drT8gfkqU4JLjCcK3Jw7L6xolIZ-qI.js line 2 > eval line 750 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1723693600125	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/yfHRfIYbZCll3drT8gfkqU4JLjCcK3Jw7L6xolIZ-qI.js line 2 > eval line 312 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://rock.defybrick.com/placement_invocation?id=65349&idx=0, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1723693606721	Marionette	INFO	Stopped listening on port 50233
+JavaScript warning: https://rock.defybrick.com/placement_invocation?id=65349&idx=0, line 1: Script terminated by timeout at:
+_acd/f/<@https://rock.defybrick.com/placement_invocation?id=65349&idx=0:1:34549
+
+JavaScript warning: https://s0.2mdn.net/879366/Enabler_01_238.js, line 79: Script terminated by timeout at:
+g.Pe@https://s0.2mdn.net/879366/Enabler_01_238.js:79:732
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

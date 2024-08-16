@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-15T18:14:34.299258" rpa="false" schemaversion="5">
+<suite id="s1" name="System" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/System.robot">
+<test id="s1-t1" name="Directorio Existe" line="51">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2024-08-15T18:14:34.375747" level="INFO" html="true">Directory '&lt;a href="file:///Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/carpeta2/Respaldo_5"&gt;/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/carpeta2/Respaldo_5&lt;/a&gt;' exists.</msg>
+<arg>carpeta2/Respaldo_5</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2024-08-15T18:14:34.375685" elapsed="0.000084"/>
+</kw>
+<msg time="2024-08-15T18:14:34.375992" level="INFO">${bandera} = True</msg>
+<var>${bandera}</var>
+<arg>operatingsystem.directory should exist</arg>
+<arg>carpeta2/Respaldo_5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-15T18:14:34.375609" elapsed="0.000394"/>
+</kw>
+<if>
+<branch type="IF" condition="'${bandera}' == 'True'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>El directorio existe</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-15T18:14:34.376137" elapsed="0.000045"/>
+</kw>
+<kw name="Copy Directory" owner="OperatingSystem">
+<msg time="2024-08-15T18:14:34.377832" level="INFO" html="true">Copied directory from '&lt;a href="file:///Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/carpeta2/Respaldo_5"&gt;/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/carpeta2/Respaldo_5&lt;/a&gt;' to '&lt;a href="file:///Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/carpeta1/RESPALDOOS_MODULO5"&gt;/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/carpeta1/RESPALDOOS_MODULO5&lt;/a&gt;'.</msg>
+<arg>carpeta2/Respaldo_5</arg>
+<arg>carpeta1/RESPALDOOS_MODULO5</arg>
+<doc>Copies the source directory into the destination.</doc>
+<status status="PASS" start="2024-08-15T18:14:34.376216" elapsed="0.001652"/>
+</kw>
+<status status="PASS" start="2024-08-15T18:14:34.376063" elapsed="0.001830"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No existe la carpeta</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-15T18:14:34.377963" elapsed="0.000011"/>
+</kw>
+<status status="NOT RUN" start="2024-08-15T18:14:34.377917" elapsed="0.000072"/>
+</branch>
+<status status="PASS" start="2024-08-15T18:14:34.376052" elapsed="0.001949"/>
+</if>
+<doc>Directorio Existe</doc>
+<tag>test_ed</tag>
+<status status="PASS" start="2024-08-15T18:14:34.375277" elapsed="0.002782"/>
+</test>
+<doc>Sistema Operativo</doc>
+<status status="PASS" start="2024-08-15T18:14:34.300047" elapsed="0.078164"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test_ed</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="System">System</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

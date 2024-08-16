@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-15T16:56:45.955887" rpa="false" schemaversion="5">
+<suite id="s1" name="Valores get" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/Valores_get.robot">
+<test id="s1-t1" name="Demo get Atribute" line="44">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-15T16:56:46.030146" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-15T16:56:46.030045" elapsed="4.994167"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.024957" elapsed="0.440862"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-15T16:56:51.508958" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.466065" elapsed="0.043030"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.509394" elapsed="0.000649"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-08-15T16:56:51.523725" level="INFO">${valor} = Full Name</msg>
+<var>${valor}</var>
+<arg>userName</arg>
+<arg>placeholder</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.510267" elapsed="0.013502"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${valor}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.524088" elapsed="0.000249"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${valor}</arg>
+<arg>Full Name</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.524502" elapsed="0.000091"/>
+</kw>
+<if>
+<branch type="IF" condition="'${valor}' == &quot;Full Name&quot;">
+<kw name="F_texto" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.525409" elapsed="0.006498"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.531998" elapsed="0.009946"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-15T16:56:51.558089" level="INFO">Element 'userName' is displayed.</msg>
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.542375" elapsed="0.015787"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.558298" elapsed="0.056695"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-15T16:56:51.615365" level="INFO">Typing text 'Juan' into text field 'userName'.</msg>
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.615140" elapsed="0.086835"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-15T16:56:51.751585" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Test_Cases3/Reportes_Practica_excel_python/IMG/Juan.png"&gt;&lt;img src="../../Test_Cases3/Reportes_Practica_excel_python/IMG/Juan.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${sel}</arg>
+<arg>${ruta_fotos_pagina}${dato}.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.702137" elapsed="0.049513"/>
+</kw>
+<arg>userName</arg>
+<arg>Juan</arg>
+<status status="PASS" start="2024-08-15T16:56:51.525218" elapsed="0.226506"/>
+</kw>
+<status status="PASS" start="2024-08-15T16:56:51.524782" elapsed="0.226982"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No Es El Campo</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-15T16:56:51.752009" elapsed="0.000013"/>
+</kw>
+<status status="NOT RUN" start="2024-08-15T16:56:51.751801" elapsed="0.000235"/>
+</branch>
+<status status="PASS" start="2024-08-15T16:56:51.524656" elapsed="0.227394"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-15T16:56:53.753117" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-15T16:56:51.752120" elapsed="2.001232"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-15T16:56:53.753715" elapsed="0.086686"/>
+</kw>
+<doc>Valores con GET Atribute</doc>
+<tag>test_atribute</tag>
+<status status="PASS" start="2024-08-15T16:56:46.029716" elapsed="7.810989"/>
+</test>
+<doc>Valores GET</doc>
+<status status="PASS" start="2024-08-15T16:56:45.956298" elapsed="7.884723"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test_atribute</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Valores get">Valores get</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

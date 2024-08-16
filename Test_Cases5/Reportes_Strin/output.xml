@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-16T10:38:51.670193" rpa="false" schemaversion="5">
+<suite id="s1" name="String" source="/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Test_Cases5/String.robot">
+<test id="s1-t1" name="Demo de Substraer" line="29">
+<kw name="F_pedir_valor" owner="Funciones">
+<kw name="Get Value From User" owner="Dialogs">
+<msg time="2024-08-16T10:38:55.711899" level="INFO">${val} = mauricio</msg>
+<var>${val}</var>
+<arg>${texto}</arg>
+<doc>Pauses execution and asks user to input a value.</doc>
+<status status="PASS" start="2024-08-16T10:38:51.910298" elapsed="3.801741"/>
+</kw>
+<return>
+<value>${val}</value>
+<status status="PASS" start="2024-08-16T10:38:55.712324" elapsed="0.000154"/>
+</return>
+<msg time="2024-08-16T10:38:55.712748" level="INFO">${nom} = mauricio</msg>
+<var>${nom}</var>
+<arg>Dame tu nombre</arg>
+<status status="PASS" start="2024-08-16T10:38:51.909996" elapsed="3.802779"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${nom}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-16T10:38:55.713168" elapsed="0.000347"/>
+</kw>
+<kw name="Get Substring" owner="String">
+<msg time="2024-08-16T10:38:55.713975" level="INFO">${val} = </msg>
+<var>${val}</var>
+<arg>${nom}</arg>
+<arg>3</arg>
+<arg>0</arg>
+<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
+<status status="PASS" start="2024-08-16T10:38:55.713707" elapsed="0.000289"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${val}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-16T10:38:55.714135" elapsed="0.000125"/>
+</kw>
+<doc>Subtraer texto</doc>
+<tag>test_sub</tag>
+<status status="PASS" start="2024-08-16T10:38:51.909744" elapsed="3.804673"/>
+</test>
+<doc>Library String</doc>
+<status status="PASS" start="2024-08-16T10:38:51.670636" elapsed="4.044452"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test_sub</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="String">String</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-16T10:38:51.779710" level="WARN">Error in file '/Users/mauricio/Documents/Pycharm/pythonProject/Curso_Selenium/Keywords_1/Funciones.robot' on line 52: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
